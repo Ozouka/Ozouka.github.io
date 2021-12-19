@@ -1,25 +1,169 @@
-body {
-    background-color: lightblue;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
 }
 
-header{
+body{
+    background-color: #ffffff;
+    font-family: Lato;
+}
+
+nav{
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    
 }
-.nomp {
+nav h1 {
+    margin: 15px;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Caveat;
+}
+nav ul {
+    display: flex;
+    margin: 15px;
+}
+nav ul li {
+    margin-right: 25px;
+    font-size: 30px;
+    list-style: none;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #677dc7;
+}
+.banner {
+    background: url("backgroundsahara2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+
+
+.banner-content{
     position: relative;
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+    width: 110vh;
+    height: 75%;  
+    border-radius: 30px;
 }
 
-.nomp h1 {
-    text-align: left;
+.banner-content a{
+    padding-left:4%;
+    padding-top: 10%;
+    font-weight: 500;
+    width: 75%;
+    background-color: #332E33;
+    border-radius: 0;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 75px;
 }
 
-.CVb{
-    text-align: right;
-    margin-left: 50%;
+
+.banner-border{
+    display: flex;
+    margin-top: 7%;
+    width: 100%;
+    height: 55vh;
+    background-color: #1a1a1a;
 }
 
-.contacth {
-    text-align: right;
+.banner-content a{
+    margin-top: 0;
+    margin:2%;
+    font-size: 130%;
+    color: #ffffff ;
+}
 
+.pro{
+    margin-left: 10%;
+    
+}
+
+.interet{
+    padding-top: 7%;
+}
+
+.image{
+    margin-top: 2%;
+    height: 85%;
+    width: 30%;
+    border-radius: 20px;;
+}
+
+.projetpro{
+    display: flex;
+    margin-top: 25%;
+    padding:0%;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.centreinteret{
+    display: flex;
+    margin-top: 0;
+    padding-left: 10%;
+    padding-top: 5%;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.banner-text p {
+    margin-left: 3%;
+    margin-top: 3%;
+    color: #ffffff;
+    width: 60%;
+    font-size: 20px;
+    text-indent: 3%;
+}
+
+.banner-text h1 {
+    display: flex;
+    margin-left: 5%;
+    justify-content:left;
+    align-items: center;
+    padding-top: 18vh;
+    font-size: 60px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+footer{
+    margin:0%;
+    height: 100%;
+    width: 100%;
+    background-image: url("footerimg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+footer h1{
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+footer li{
+    color: #ffffff;
+    margin-left: 5%;
+    padding-top:1%;
+    padding-bottom: 2%;
 }
